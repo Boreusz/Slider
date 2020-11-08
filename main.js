@@ -1,19 +1,14 @@
 const slider = (() => {
-    const activeSlide = (slideID) => {
+
+    const slide = () => {
 
     }
-    const nextSlide = () => {
 
-    }
-    const previousSlide = () => {
-
-    }
-    const choosenSlide = (slideID) => {
+    const chooseSlide = (slideID) => {
 
     }
     return {
-        nextSlide,
-        previousSlide,
-        choosenSlide
+        slide,
+        chooseSlide
     }
 })();
