@@ -1,11 +1,10 @@
 i{
     color: rgb(77, 77, 77);
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
 }
 i:hover {
     color: rgb(59, 59, 59);
-    font-size: 50px;
 }
 i:active {
     font-size: 45px;
@@ -44,6 +43,7 @@ i:active {
     position: absolute;
     display: flex;
     flex-direction: row;
+    transition: transform 1s linear;
 }
 .images-frame {
     width: 300px;
@@ -57,23 +57,17 @@ i:active {
     justify-content: center;
 }
 .dot {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border: 1px solid rgb(70, 70, 70);
     border-radius: 100%;
     margin: 0 2px ;
-}
-.dot:hover {
-    width: 12px;
-    height: 12px;
 }
 .dot:active {
     width: 10px;
     height: 10px;
 }
-.active {
-    background-color: rgb(70, 70, 70);
-}
+
 footer {
     position: absolute;
     padding-bottom: 10px;
