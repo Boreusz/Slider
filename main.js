@@ -22,6 +22,7 @@ const slider = (() => {
         dotsReset(counter);
     }
     const chooseSlide = (object, slideID) => {
+        counter = slideID;
         object.style.transform = 'translateX(-'+ (300 * parseInt(slideID)) + 'px)';
         slide(object, slideID);
         dotsReset(slideID);
