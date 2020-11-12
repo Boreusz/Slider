@@ -2,6 +2,8 @@ const slider = (() => {
     let counter = 0;
     const slide = (object, number = counter) => {
         object.style.transform = 'translateX(-'+ (300 * number) + 'px)';
+        window.clearInterval(timer);
+        timer = setInterval(foo, 5000)
     }
     const nextSlide = (object) => {
         counter++;
@@ -57,4 +59,7 @@ imagenav.forEach((dot) => {
         slider.chooseSlide(images, dot.getAttribute('id'))
     });
 });
-setInterval(slider.nextSlide(images), 1000);
+function foo () {
+    slider.nextSlide(images)
+}
+let timer = setInterval(foo, 5000);
